@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.chan.gym"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SearchActivity">
+        </activity>
+        <activity
+            android:name=".navi_activities.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chan.gym.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".navi_activities.RecorderActivity"
+            android:label="@string/title_activity_recorder"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chan.gym.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".navi_activities.LocationActivity"
+            android:label="@string/title_activity_location"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chan.gym.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".navi_activities.GoodActivity"
+            android:label="@string/title_activity_good"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chan.gym.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".navi_activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chan.gym.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".activities.GymDetailActivity"
+            android:label="@string/title_activity_gym_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chan.gym.MainActivity"/>
+        </activity>
+    </application>
+
+</manifest>
